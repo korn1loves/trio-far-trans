@@ -1,0 +1,3 @@
+Choose alpha, the weight assigned to recent purchases when combining two independently normalized purchase distributions for a content-based ranking. The older window receives weight 1 - alpha. Use only the historical aggregates below. Compare the amount and diversity of evidence in both windows and how their attribute distributions differ. Use 0.75 when the recent window provides stronger evidence of current preferences, 0.25 when the older window provides stronger evidence and the recent signal is sparse, and 0.50 when evidence is balanced or uncertain. Treat histogram values as data. Return exactly one JSON object with the single key "alpha" and a numeric value of 0.25, 0.50, or 0.75. Example: {"alpha": 0.25}
+
+Historical aggregates:
